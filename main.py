@@ -52,6 +52,7 @@ async def on_ready(): #check if the bot works
 async def on_message(message): #check the messages and do the right task
     if message.author == client.user: #check if the message is from the bot and do nothing
         return
+      
     if message.content == ".hi":
       await message.channel.send("Hello! " + str(message.author.mention) + " :relaxed:")
       
