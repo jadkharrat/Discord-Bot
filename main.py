@@ -54,7 +54,7 @@ async def on_message(message): #check the messages and do the right task
         return
       
     if message.content == ".hi":
-      await message.channel.send("Hello! " + str(message.author.mention) + " :relaxed:")
+        await message.channel.send("Hello! " + str(message.author.mention) + " :relaxed:")
       
     if message.content.startswith('.chuck'):
         joke = chuck_joke()
